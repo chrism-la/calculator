@@ -4,32 +4,32 @@ class Calculator {
       this.currentOperandTextElement = currentOperandTextElement
       this.clear()
    }
-}
 
-clear () {
-   this.currentOperand = ''
-   this.previousOperand = ''
-   this.operation = undefined 
-}
-
-delete () {
-
-}
-
-appendNumber (number) {
-
-}
-
-chooseOperation (operation) {
-
-}
-
-compute () {
-
-}
-
-updateDisplay () {
-
+   clear () {
+      this.currentOperand = ''
+      this.previousOperand = ''
+      this.operation = undefined 
+   }
+   
+   delete () {
+   
+   }
+   
+   appendNumber(number) {
+      this.currentOperand = number
+   }
+   
+   chooseOperation (operation) {
+   
+   }
+   
+   compute () {
+   
+   }
+   
+   updateDisplay() {
+      this.currentOperandTextElement.innerText = this.currentOperand
+   }
 }
 
 
