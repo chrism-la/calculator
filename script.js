@@ -42,5 +42,11 @@ const previousOperandTextElement = document.querySelector('[data-previous-operan
 const currentOperandTextElement = document.querySelector('[data-current-operand]')
 
 
+const calculator = new Calculator(previousOperandTextElement, currentOperandTextElement) 
 
-// 1. Storing information 
+numberButtons.forEach(button => {
+   button.addEventListener('click', () => {
+      calculator.appendNumber(button.innerText)
+      calculator.updateDisplay()
+   })
+})
