@@ -9,9 +9,7 @@ body{
    background: linear-gradient( to right, #00AAFF, #b22222 );
 }
 
-
 /* Formatting */
-
 
 .calculator-grid{
    display: grid;
